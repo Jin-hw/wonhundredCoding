@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=B612+Mono&family=DM+Serif+Display:ital@0;1&display=swap");
+@import "_variables";
+@import "_elements";
+@import "reset.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Serif Display", monospace;
+  padding: 45px;
+}
+
+header {
+  background-color: black;
+  nav {
+    ul {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      li {
+        background-color: white;
+        text-align: center;
+        &:nth-child(2) {
+          grid-column-start: span 2;
+        }
+      }
+    }
+  }
+}
